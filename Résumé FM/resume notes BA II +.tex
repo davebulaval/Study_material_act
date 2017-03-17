@@ -1,0 +1,103 @@
+\documentclass[11pt,french]{report}
+  \usepackage{babel}
+  \usepackage[utf8]{inputenc}   % LaTeX
+  \usepackage[T1]{fontenc}      % LaTeX
+	\usepackage{icomma}
+	\usepackage{fontenc}
+  \usepackage[colorlinks]{hyperref}
+
+  \frenchbsetup{ItemLabeli==$>$}
+
+% déclaration de formule pour annuité
+\DeclareRobustCommand{\annuity}[1]{%
+\def\arraystretch{0}%
+\setlength\arraycolsep{.7pt}%
+\setlength\arrayrulewidth{.3pt}% 
+\begin{array}[b]{@{}c|}\hline
+\\[\arraycolsep]%
+\scriptstyle #1%
+\end{array}%
+}
+
+% exemple d'utilisation de la fonction annuity
+% \ddot{a}_{\annuity{n}i} 
+
+\title{Notes calculatrice BA II +}
+\author{David Beauchemin}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Notes supplémentaires}
+
+\begin{enumerate}
+\item Boverman offre aussi un \emph{PDF} d'explication, le document est disponible sur le Google Drive du groupe d'échange de document dans la section du cours de \href{https://drive.google.com/open?id=0B6kXivc6X9LITmdBVFVWSDAxeE0}{mathématique financière}.
+\item J'ai mis aussi des résumés de formule du cours précédent et de la \emph{SOA} qui sont disponible dans le fichier \emph{ZIP}  \href{https://drive.google.com/open?id=0B6kXivc6X9LIYUFKaHcxNmtiUUk}{\emph{FM}}.
+\item \textbf{Notes sur la légende d'écriture} : 
+Un symbole + signifie prochaine touche à \textit{cliquer} est la suivante.
+
+\end{enumerate}
+
+\chapter{Format d'affichage, valeur future, valeur actualisée et taux nominaux}
+
+\textit{*Chapitre 1 dans le livre}
+
+\section{Format d'affichage}
+\fbox{2ND} + \fbox{format} + nombre de décimale + \fbox{enter}
+
+\section{Valeur future}
+\begin{enumerate}
+
+\item Accumulation simple
+\\ (1 + taux d'intérêt) + \fbox{$ y^{x} $} + valeur de l'exposant (x) + \fbox{X} + montant à accumulé + \fbox{=}
+\item Fonction TVM
+\\ Légende :
+
+\begin{enumerate}
+\item \fbox{N} période ;
+\item \fbox{I$ / $Y} taux d'intérêt par période ;
+\item \fbox{PV} Valeur présente ;
+\item \fbox{PMT} Paiement (annuité) ;
+\item \fbox{FV} Valeur accumulée ;
+\item Astuce : La fréquence du taux d'intérêt peut-être modifié. On pourrait mettre le taux annuel effectif et jouer avec les paramètres de la calculatrice pour avoir un taux d'intérêt mensuel.
+\\ Voici comment, \fbox{I$ / $Y} et régler à 12 pour avoir un mensuel. De base, pour ne pas faire d'erreur laisser à 1. Mais toujours utile de savoir cette fonction.
+\end{enumerate}
+
+\item \textbf{Comment utilisé TVM :}
+\\ Nombre prériode + \fbox{N} + taux d'intérêt + \fbox{I$ / $Y} + valeur à accumulé + \fbox{+$ / $-} + \fbox{PV} + \fbox{CPT} + \fbox{FV}
+\\ 
+\item \textbf{Astuce :} Pour afficher la valeur d'un des paramètres utilisé dans TVM, \fbox{RCL} + \fbox{N} ou \fbox{PV}... 
+\\
+\item \textbf{Astuce :}
+\begin{LARGE}
+Ne pas oublier de \textit{clear} les valeurs!!
+\end{LARGE}
+\\ \fbox{2ND} + \fbox{CLR TVM}
+
+\end{enumerate}
+
+\section{Trouver le taux d'intérêt}
+Nombre de période + \fbox{N} + montant à accumuler + \fbox{PV} + montant future + \fbox{FV} + \fbox{CPT} + \fbox{I$ / $Y }
+
+\section{Trouver le nombre de période}
+Taux d'intérêt + \fbox{I$ / $Y } + valeur présente + \fbox{+$ / $- } + \fbox{PV} + montant future + \fbox{FV} + \fbox{CPT} + \fbox{N}
+
+\section{Taux nominal et TVM}
+Comme les taux nominaux sont divise par le nombre de période, on peut simplement faire : \\
+Nombre prériode + \fbox{N} + ($i^{(m)} \div m$) + \fbox{=} + \fbox{I$ / $Y} + valeur à accumulé + \fbox{+$ / $-} + \fbox{PV} + \fbox{CPT} + \fbox{FV}
+\\
+
+\section{Taux équivalent}
+
+Convertir un taux nominal en effectif : 
+
+\fbox{2ND} + \fbox{ICONV} + \emph{NOM} (taux nominal) + \fbox{ENTER} + \fbox{$\Downarrow$} jusqu'à \emph{$C / Y$} (nombre de période) + \fbox{ENTER} + \fbox{$\Uparrow$} jusqu'à \emph{EFF} + \fbox{CPT}
+\\
+\\ Pour trouver un taux nominal on \fbox{CPT} \emph{NOM} et on fixe le taux effectif dans \fbox{EFF}.
+\\
+\\ Pour trouver un taux d'escompte, convertir \emph{d} en \emph{i}.
+
+\end{document}

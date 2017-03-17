@@ -1,0 +1,9 @@
+\select@language {french}
+\contentsline {chapter}{\numberline {1}Notes suppl\IeC {\'e}mentaires}{2}{chapter.1}
+\contentsline {chapter}{\numberline {2}Format d'affichage, valeur future, valeur actualis\IeC {\'e}e et taux nominaux}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Format d'affichage}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Valeur future}{3}{section.2.2}
+\contentsline {section}{\numberline {2.3}Trouver le taux d'int\IeC {\'e}r\IeC {\^e}t}{4}{section.2.3}
+\contentsline {section}{\numberline {2.4}Trouver le nombre de p\IeC {\'e}riode}{4}{section.2.4}
+\contentsline {section}{\numberline {2.5}Taux nominal et TVM}{4}{section.2.5}
+\contentsline {section}{\numberline {2.6}Taux \IeC {\'e}quivalent}{5}{section.2.6}
